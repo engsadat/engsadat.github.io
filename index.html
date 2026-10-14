@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sadat Ahmed — Data Engineer &amp; BI Developer</title>
+<meta name="description" content="Sadat Ahmed — Data Engineer / BI Developer. Python, Flask, SQL Server, Power BI, automated reporting for water-infrastructure projects.">
+<style>
+  :root{
+    --ink:#1b2430; --muted:#5b6675; --line:#e3e8ee; --bg:#f5f7fa; --card:#fff;
+    --accent:#0f6e8c; --accent-soft:#e3f2f7; --accent-dark:#0a4f66;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif;
+       color:var(--ink);background:var(--bg);line-height:1.6}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:980px;margin:0 auto;padding:32px 20px 48px}
+
+  /* Header */
+  header.hero{background:linear-gradient(135deg,var(--accent-dark),var(--accent));color:#fff;
+       border-radius:14px;padding:36px 36px 30px;display:flex;gap:28px;align-items:center;flex-wrap:wrap}
+  .avatar{width:96px;height:96px;border-radius:50%;background:rgba(255,255,255,.15);
+       border:2px solid rgba(255,255,255,.5);display:grid;place-items:center;font-size:34px;font-weight:600;flex:none}
+  .hero h1{margin:0;font-size:32px;letter-spacing:.3px}
+  .hero .role{margin:4px 0 10px;font-size:17px;opacity:.92}
+  .hero .tags{display:flex;flex-wrap:wrap;gap:8px}
+  .hero .tags span{background:rgba(255,255,255,.16);border-radius:20px;padding:3px 12px;font-size:13px}
+  .contact{margin-left:auto;font-size:14px;display:grid;gap:4px}
+  .contact a{color:#fff}
+
+  /* Layout */
+  .grid{display:grid;grid-template-columns:1fr 300px;gap:22px;margin-top:22px}
+  section.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:24px 26px;margin-bottom:22px}
+  h2{margin:0 0 14px;font-size:15px;text-transform:uppercase;letter-spacing:1.4px;color:var(--accent);
+     border-bottom:2px solid var(--accent-soft);padding-bottom:8px}
+  p{margin:0 0 10px}
+
+  /* Stats */
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:14px}
+  .stat{background:var(--accent-soft);border-radius:10px;padding:12px;text-align:center}
+  .stat b{display:block;font-size:22px;color:var(--accent-dark)}
+  .stat small{color:var(--muted);font-size:12px}
+
+  /* Timeline */
+  .job{position:relative;padding-left:22px;margin-bottom:22px}
+  .job:last-child{margin-bottom:0}
+  .job::before{content:"";position:absolute;left:4px;top:8px;width:10px;height:10px;border-radius:50%;background:var(--accent)}
+  .job::after{content:"";position:absolute;left:8px;top:22px;bottom:-18px;width:2px;background:var(--line)}
+  .job:last-child::after{display:none}
+  .job h3{margin:0;font-size:17px}
+  .job .meta{color:var(--muted);font-size:14px;margin-bottom:8px}
+  .job ul{margin:0;padding-left:18px}
+  .job li{margin-bottom:6px}
+
+  /* Skills */
+  .skill-group{margin-bottom:14px}
+  .skill-group h4{margin:0 0 6px;font-size:13px;color:var(--muted);font-weight:600}
+  .chips{display:flex;flex-wrap:wrap;gap:6px}
+  .chips span{border:1px solid var(--line);background:#fafbfc;border-radius:6px;padding:2px 9px;font-size:13px}
+
+  /* Side lists */
+  .plain{list-style:none;margin:0;padding:0}
+  .plain li{padding:6px 0;border-bottom:1px dashed var(--line);font-size:14px}
+  .plain li:last-child{border-bottom:none}
+  .plain small{display:block;color:var(--muted)}
+  .badges{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:center;margin-top:12px}
+  .badges img{max-height:54px;max-width:100%}
+  .badges img.big{max-height:90px}
+
+  footer{text-align:center;color:var(--muted);font-size:13px;margin-top:10px}
+
+  @media (max-width:820px){
+    .grid{grid-template-columns:1fr}
+    .stats{grid-template-columns:repeat(2,1fr)}
+    .contact{margin-left:0}
+  }
+  @media print{
+    body{background:#fff}
+    .wrap{padding:0}
+    header.hero{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    section.card{break-inside:avoid;border:none;padding:10px 0}
+    .stat{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    footer{display:none}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <div class="avatar">SA</div>
+    <div>
+      <h1>Sadat Ahmed</h1>
+      <div class="role">Data Engineer &amp; BI Developer · Electrical Engineer (Computer &amp; Control)</div>
+      <div class="tags">
+        <span>Python</span><span>Power BI</span><span>SQL Server</span><span>Flask</span><span>.NET / C#</span><span>AI-assisted development</span>
+      </div>
+    </div>
+    <div class="contact">
+      <!-- TODO: fill in your contact details -->
+      <span>📍 Saudi Arabia</span>
+      <a href="mailto:you@example.com">✉ you@example.com</a>
+      <a href="https://www.linkedin.com/in/your-profile">in LinkedIn</a>
+      <a href="https://github.com/engsadat">⌥ github.com/engsadat</a>
+    </div>
+  </header>
+
+  <div class="grid">
+    <main>
+      <section class="card">
+        <h2>Profile</h2>
+        <p>Data engineer and BI developer for a large water and wastewater infrastructure portfolio in Saudi Arabia (National Water Company contracts). I turn scattered Excel and OneDrive data into reliable dashboards, automated reports and internal web tools.</p>
+        <p>Microsoft Certified since 2008 and Google Data Analytics certified (2022). My background is software development in C#, ASP.NET and SQL Server. I now work mostly in Python and Power BI, using AI-assisted development (Claude Code, Cursor) to deliver quickly.</p>
+        <div class="stats">
+          <div class="stat"><b>~180</b><small>projects managed in data</small></div>
+          <div class="stat"><b>~7.4B</b><small>SAR portfolio value</small></div>
+          <div class="stat"><b>~440</b><small>active staff records</small></div>
+          <div class="stat"><b>50+</b><small>data-entry contributors</small></div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Experience</h2>
+
+        <div class="job">
+          <h3>Data Engineer / BI Developer</h3>
+          <div class="meta">Al-Amro Group for Engineering Consultants · Southern Sector, NWC contracts · Current</div>
+          <ul>
+            <li>Organize data for about 180 water, sewer and infrastructure projects. I collect it from 50+ data-entry users at the same time through shared OneDrive/SharePoint files.</li>
+            <li><b>HR &amp; Projects web portal:</b> a Flask (Python) app with SQLAlchemy/Alembic, SQLite/PostgreSQL, role-based login (Viewer/Editor/Admin), employee editing and Excel import/export. Covered by 290+ automated tests.</li>
+            <li><b>Automated reporting:</b> Python generators turn Excel source files into print-ready HTML/PDF reports and dashboards: project portfolio, HR, leave schedule, per-project engineer forms and incident reports. They support Arabic RTL and A4/A3 print layouts.</li>
+            <li><b>Power BI:</b> custom report themes and page backgrounds, DAX measures, and a multi-scenario stakeholder dashboard for the Saudi Water Authority. I also build Looker Studio dashboards.</li>
+            <li><b>Excel automation:</b> pandas, openpyxl and Excel COM scripts to merge regional workbooks and split NWC invoices by region.</li>
+            <li>Prepare the monthly contract report (main info, safety, quality, site photos), PowerPoint reports, and organization charts for main projects.</li>
+            <li><b>AI-assisted development:</b> daily use of Claude Code, Cursor and other AI tools for planning, coding, Playwright testing and code review. Version control with Git/GitHub.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <h3>Data Analyst &amp; Report Designer</h3>
+          <div class="meta">National Water Company (NWC) · Aseer &amp; Jazan Units · 2019 – 2024</div>
+          <ul>
+            <li>Worked in the Customer Service and Operation &amp; Maintenance Departments on the CCB &amp; AMR systems.</li>
+            <li>Expert in <b>Hayah BI Reports</b>: Billing, Collection, Complaint, Revenue, New Connection, Field Activity, Violation, and AMR (Online, Offline, Missing, Smart-Ready).</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <h3>ASP.NET Developer</h3>
+          <div class="meta">Tab-erp Solution Co. · Jeddah Branch · 4 months</div>
+          <ul>
+            <li>Web application development with ASP.NET, C# and SQL Server.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Projects</h2>
+        <div class="job">
+          <h3>Mizan App — Author &amp; Developer</h3>
+          <div class="meta">Personal project · 2026 · <a href="https://mizan-portal.onrender.com/">View app</a></div>
+          <p>Mizan is a [what it is, e.g. "web app that…"] built for [who uses it]. I designed and built it end to end: [main features].</p>
+          <div class="chips"><span>Python</span><span>Flask</span><span>SQL</span></div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Skills</h2>
+        <div class="skill-group"><h4>Data &amp; BI</h4>
+          <div class="chips"><span>Python (pandas, openpyxl)</span><span>R</span><span>Power BI &amp; DAX</span><span>Tableau</span><span>Looker Studio</span><span>Excel</span><span>Crystal Reports XI</span><span>Big data handling</span></div></div>
+        <div class="skill-group"><h4>Web &amp; Software</h4>
+          <div class="chips"><span>Flask</span><span>SQLAlchemy / Alembic</span><span>Jinja2</span><span>HTML / CSS / JavaScript</span><span>Chart.js</span><span>Arabic RTL &amp; print layouts</span><span>C#</span><span>ASP.NET (MVC)</span><span>ADO.NET</span><span>VB6</span><span>OOP</span><span>Joomla / WordPress</span></div></div>
+        <div class="skill-group"><h4>Databases</h4>
+          <div class="chips"><span>SQL Server 2000–2022</span><span>PostgreSQL</span><span>SQLite</span><span>MS Access</span></div></div>
+        <div class="skill-group"><h4>Tools &amp; Practices</h4>
+          <div class="chips"><span>Git &amp; GitHub</span><span>pytest</span><span>Playwright</span><span>Claude Code</span><span>Cursor</span><span>Visual Studio</span><span>Microsoft 365 / SharePoint / OneDrive</span><span>Google Workspace</span><span>Domain &amp; hosting</span></div></div>
+      </section>
+    </main>
+
+    <aside>
+      <section class="card">
+        <h2>Education</h2>
+        <ul class="plain">
+          <li><b>B.Sc. Electrical Engineering</b><small>Computer &amp; Control Department · Faculty of Engineering, Suez Canal University</small></li>
+          <li><b>Graduation project</b><small>Windows application for boxing match judging · Grade: Very Good</small></li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Certifications</h2>
+        <ul class="plain">
+          <li><b>Google Data Analytics</b><small>Professional Certificate · 2022</small></li>
+          <li><b>MCTS</b><small>Microsoft Certified Technology Specialist</small></li>
+          <li><b>MCTS – Windows Apps</b><small>.NET Framework 2.0</small></li>
+          <li><b>MCTS – Web Apps</b><small>.NET Framework 2.0</small></li>
+          <li><b>Berlitz English</b><small>4 levels of English for Life</small></li>
+        </ul>
+        <div class="badges">
+          <img class="big" src="assets/google-data-analytics.png" alt="Google Data Analytics Certificate">
+          <img src="assets/ms-professional-developer.jpg" alt="Microsoft Certified Professional Developer">
+          <img src="assets/ms-technology-specialist.jpg" alt="Microsoft Certified Technology Specialist">
+          <img src="assets/berlitz.png" alt="Berlitz">
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Soft Skills</h2>
+        <ul class="plain">
+          <li>Communication</li>
+          <li>Team working</li>
+          <li>Business writing</li>
+          <li>Presentation</li>
+          <li>Customer service</li>
+          <li>Problem solving &amp; decision making</li>
+          <li>Basic marketing</li>
+        </ul>
+        <p style="margin-top:8px;font-size:13px;color:var(--muted)">Dale Carnegie® training</p>
+      </section>
+
+      <section class="card">
+        <h2>Languages</h2>
+        <ul class="plain">
+          <li>Arabic<small>Native</small></li>
+          <li>English<small>Professional working</small></li>
+        </ul>
+      </section>
+    </aside>
+  </div>
+
+  <footer>© 2026 Sadat Ahmed</footer>
+</div>
+</body>
+</html>
